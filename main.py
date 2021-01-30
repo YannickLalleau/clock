@@ -1,3 +1,4 @@
+#Import
 from tkinter import *
 import tkinter.ttk as ttk
 import tkinter.font as font
@@ -102,26 +103,189 @@ class App:
                     or (i == 0 and j == 3) \
                     or (i == 0 and j == 4) \
                     or (i == 0 and j == 5) \
-                    or (i == 0 and j == 7 and (hour == 2 or hour == 14)) \
-                    or (i == 0 and j == 8 and (hour == 2 or hour == 14)) \
-                    or (i == 0 and j == 9 and (hour == 2 or hour == 14)) \
-                    or (i == 0 and j == 10 and (hour == 2 or hour == 14)) \
+                    or (i == 0 and j == 7 and (
+                    ((hour == 1 or hour == 13) and minute > 30) or ((hour == 2 or hour == 14) and minute < 35))) \
+                    or (i == 0 and j == 8 and (
+                    ((hour == 1 or hour == 13) and minute > 30) or ((hour == 2 or hour == 14) and minute < 35))) \
+                    or (i == 0 and j == 9 and (
+                    ((hour == 1 or hour == 13) and minute > 30) or ((hour == 2 or hour == 14) and minute < 35))) \
+                    or (i == 0 and j == 10 and (
+                    ((hour == 1 or hour == 13) and minute > 30) or ((hour == 2 or hour == 14) and minute < 35))) \
+                    or (i == 1 and j == 0 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
+                    or (i == 1 and j == 1 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
+                    or (i == 1 and j == 2 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
+                    or (i == 1 and j == 3 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
+                    or (i == 1 and j == 4 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
+                    or (i == 1 and j == 5 and (
+                    ((hour == 3 or hour == 15) and minute > 30) or ((hour == 4 or hour == 16) and minute < 35))) \
                     or (i == 1 and j == 6 and (
-                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 30))) \
+                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 35))) \
                     or (i == 1 and j == 7 and (
-                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 30))) \
+                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 35))) \
                     or (i == 1 and j == 8 and (
-                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 30))) \
+                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 35))) \
                     or (i == 1 and j == 9 and (
-                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 30))) \
+                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 35))) \
                     or (i == 1 and j == 10 and (
-                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 30))) \
+                    ((hour == 2 or hour == 14) and minute > 30) or ((hour == 3 or hour == 15) and minute < 35))) \
+                    or (i == 2 and j == 0 and (
+                    ((hour == 8 or hour == 20) and minute > 30) or ((hour == 9 or hour == 21) and minute < 35))) \
+                    or (i == 2 and j == 1 and (
+                    ((hour == 8 or hour == 20) and minute > 30) or ((hour == 9 or hour == 21) and minute < 35))) \
+                    or (i == 2 and j == 2 and (
+                    ((hour == 8 or hour == 20) and minute > 30) or ((hour == 9 or hour == 21) and minute < 35))) \
+                    or (i == 2 and j == 3 and (
+                    ((hour == 8 or hour == 20) and minute > 30) or ((hour == 9 or hour == 21) and minute < 35))) \
+                    or (i == 2 and j == 4 and (
+                    ((hour == 12) and minute > 30) or ((hour == 1 or hour == 13) and minute < 35))) \
+                    or (i == 2 and j == 5 and (
+                    ((hour == 12) and minute > 30) or ((hour == 1 or hour == 13) and minute < 35))) \
+                    or (i == 2 and j == 6 and (
+                    ((hour == 12) and minute > 30) or ((hour == 1 or hour == 13) and minute < 35))) \
+                    or (i == 2 and j == 7 and (
+                    ((hour == 6 or hour == 18) and minute > 30) or ((hour == 7 or hour == 19) and minute < 35))) \
+                    or (i == 2 and j == 8 and (
+                    ((hour == 6 or hour == 18) and minute > 30) or ((hour == 7 or hour == 19) and minute < 35))) \
+                    or (i == 2 and j == 9 and (
+                    ((hour == 6 or hour == 18) and minute > 30) or ((hour == 7 or hour == 19) and minute < 35))) \
+                    or (i == 2 and j == 10 and (
+                    ((hour == 6 or hour == 18) and minute > 30) or ((hour == 7 or hour == 19) and minute < 35))) \
+                    or (i == 3 and j == 0 and (
+                    ((hour == 7 or hour == 19) and minute > 30) or ((hour == 8 or hour == 20) and minute < 35))) \
+                    or (i == 3 and j == 1 and (
+                    ((hour == 7 or hour == 19) and minute > 30) or ((hour == 8 or hour == 20) and minute < 35))) \
+                    or (i == 3 and j == 2 and (
+                    ((hour == 7 or hour == 19) and minute > 30) or ((hour == 8 or hour == 20) and minute < 35))) \
+                    or (i == 3 and j == 3 and (
+                    ((hour == 7 or hour == 19) and minute > 30) or ((hour == 8 or hour == 20) and minute < 35))) \
+                    or (i == 3 and j == 4 and (
+                    ((hour == 5 or hour == 17) and minute > 30) or ((hour == 6 or hour == 18) and minute < 35))) \
+                    or (i == 3 and j == 5 and (
+                    ((hour == 5 or hour == 17) and minute > 30) or ((hour == 6 or hour == 18) and minute < 35))) \
+                    or (i == 3 and j == 6 and (
+                    ((hour == 5 or hour == 17) and minute > 30) or ((hour == 6 or hour == 18) and minute < 35))) \
+                    or (i == 3 and j == 7 and (
+                    ((hour == 4 or hour == 16) and minute > 30) or ((hour == 5 or hour == 17) and minute < 35))) \
+                    or (i == 3 and j == 8 and (
+                    ((hour == 4 or hour == 16) and minute > 30) or ((hour == 5 or hour == 17) and minute < 35))) \
+                    or (i == 3 and j == 9 and (
+                    ((hour == 4 or hour == 16) and minute > 30) or ((hour == 5 or hour == 17) and minute < 35))) \
+                    or (i == 3 and j == 10 and (
+                    ((hour == 4 or hour == 16) and minute > 30) or ((hour == 5 or hour == 17) and minute < 35))) \
+                    or (i == 4 and j == 0 and (
+                    ((hour == 11) and minute > 30) or ((hour == 12) and minute < 35))) \
+                    or (i == 4 and j == 1 and (
+                    ((hour == 11) and minute > 30) or ((hour == 12) and minute < 35))) \
+                    or (i == 4 and j == 2 and (
+                    ((hour == 11) and minute > 30) or ((hour == 12) and minute < 35))) \
+                    or (i == 4 and j == 2 and (
+                    ((hour == 9 or hour == 21) and minute > 30) or ((hour == 10 or hour == 22) and minute < 35))) \
+                    or (i == 4 and j == 3 and (
+                    ((hour == 11) and minute > 30) or ((hour == 12) and minute < 35))) \
+                    or (i == 4 and j == 2 and (
+                    ((hour == 9 or hour == 21) and minute > 30) or ((hour == 10 or hour == 22) and minute < 35))) \
+                    or (i == 4 and j == 2 and (
+                    ((hour == 9 or hour == 21) and minute > 30) or ((hour == 10 or hour == 22) and minute < 35))) \
+                    or (i == 4 and j == 5 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 4 and j == 6 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 4 and j == 7 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 4 and j == 8 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 4 and j == 9 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 4 and j == 10 and (
+                    ((hour == 23) and minute > 30) or ((hour == 00) and minute < 35))) \
+                    or (i == 5 and j == 0 and (
+                    ((hour == 10 or hour == 22) and minute > 30) or ((hour == 11 or hour == 23) and minute < 35))) \
+                    or (i == 5 and j == 1 and (
+                    ((hour == 10 or hour == 22) and minute > 30) or ((hour == 11 or hour == 23) and minute < 35))) \
+                    or (i == 5 and j == 2 and (
+                    ((hour == 10 or hour == 22) and minute > 30) or ((hour == 11 or hour == 23) and minute < 35))) \
+                    or (i == 5 and j == 3 and (
+                    ((hour == 10 or hour == 22) and minute > 30) or ((hour == 11 or hour == 23) and minute < 35))) \
                     or (i == 5 and j == 5) \
                     or (i == 5 and j == 6) \
                     or (i == 5 and j == 7) \
                     or (i == 5 and j == 8) \
-                    or (i == 5 and j == 9):
-                self.labellettres[i][j].configure(fg=self.onColor, font=fixedfontbold(24))
+                    or (i == 5 and j == 9) \
+                    or (i == 6 and j == 0 and (minute >= 35)) \
+                    or (i == 6 and j == 1 and (minute >= 35)) \
+                    or (i == 6 and j == 2 and (minute >= 35)) \
+                    or (i == 6 and j == 3 and (minute >= 35)) \
+                    or (i == 6 and j == 4 and (minute >= 35)) \
+                    or (i == 6 and j == 6 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 6 and j == 7 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 6 and j == 8 and (minute >= 50) and (minute <= 54)) \
+                    or (i == 6 and j == 9 and (minute >= 50) and (minute <= 54)) \
+                    or (i == 6 and j == 10 and (minute >= 50) and (minute <= 54)) \
+                    or (i == 7 and j == 3 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 7 and j == 4 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 7 and j == 5 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 7 and j == 6 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 7 and j == 7 and (minute >= 45) and (minute <= 49)) \
+                    or (i == 8 and j == 0 and (minute >= 40) and (minute <= 44)) \
+                    or (i == 8 and j == 1 and (minute >= 40) and (minute <= 44)) \
+                    or (i == 8 and j == 2 and (minute >= 40) and (minute <= 44)) \
+                    or (i == 8 and j == 3 and (minute >= 40) and (minute <= 44)) \
+                    or (i == 8 and j == 4 and (minute >= 40) and (minute <= 44)) \
+                    or (i == 8 and j == 0 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 1 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 2 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 3 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 4 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 5 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 6 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 7 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 8 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 9 and (minute >= 35) and (minute <= 39)) \
+                    or (i == 8 and j == 6 and (minute >= 55) and (minute <= 59)) \
+                    or (i == 8 and j == 7 and (minute >= 55) and (minute <= 59)) \
+                    or (i == 8 and j == 8 and (minute >= 55) and (minute <= 59)) \
+                    or (i == 8 and j == 9 and (minute >= 55) and (minute <= 59)) \
+                    or (i == 9 and j == 0 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 9 and j == 1 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 9 and j == 3 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 9 and j == 4 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 9 and j == 5 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 9 and j == 6 and (minute >= 30) and (minute <= 34)) \
+                    or (i == 6 and j == 6 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 6 and j == 7 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 6 and j == 8 and (minute >= 10) and (minute <= 14)) \
+                    or (i == 6 and j == 9 and (minute >= 10) and (minute <= 14)) \
+                    or (i == 6 and j == 10 and (minute >= 10) and (minute <= 14)) \
+                    or (i == 7 and j == 3 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 7 and j == 4 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 7 and j == 5 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 7 and j == 6 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 7 and j == 7 and (minute >= 15) and (minute <= 19)) \
+                    or (i == 8 and j == 0 and (minute >= 20) and (minute <= 24)) \
+                    or (i == 8 and j == 1 and (minute >= 20) and (minute <= 24)) \
+                    or (i == 8 and j == 2 and (minute >= 20) and (minute <= 24)) \
+                    or (i == 8 and j == 3 and (minute >= 20) and (minute <= 24)) \
+                    or (i == 8 and j == 4 and (minute >= 20) and (minute <= 24)) \
+                    or (i == 8 and j == 0 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 1 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 2 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 3 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 4 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 5 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 6 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 7 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 8 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 9 and (minute >= 25) and (minute <= 29)) \
+                    or (i == 8 and j == 6 and (minute >= 5) and (minute <= 9)) \
+                    or (i == 8 and j == 7 and (minute >= 5) and (minute <= 9)) \
+                    or (i == 8 and j == 8 and (minute >= 5) and (minute <= 9)) \
+                    or (i == 8 and j == 9 and (minute >= 5) and (minute <= 9)):
+                    self.labellettres[i][j].configure(fg=self.onColor, font=fixedfontbold(24))
             else:
                 self.labellettres[i][j].configure(fg=self.offColor, font=fixedfont(24))
 
