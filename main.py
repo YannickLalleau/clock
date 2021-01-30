@@ -315,7 +315,7 @@ class App:
         for i in range(10):
             for j in range(11):
                 self.displayletter(i, j, hour, minute)
-        for i in range(3):
+        for i in range(4):
             self.displaycounter(i, hour, minute)
 
         self.root.after(100, self.update)
